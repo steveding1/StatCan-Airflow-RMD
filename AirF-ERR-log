@@ -1,0 +1,30 @@
+[2022-04-22, 09:18:47 UTC] {process_utils.py:160} INFO - Executing cmd: /home/sding/airflow/airflow/bin/python3 -m virtualenv /tmp/venvbud8b64k
+[2022-04-22, 09:18:47 UTC] {process_utils.py:164} INFO - Output:
+[2022-04-22, 09:18:47 UTC] {process_utils.py:168} INFO - created virtual environment CPython3.8.10.final.0-64 in 255ms
+[2022-04-22, 09:18:47 UTC] {process_utils.py:168} INFO -   creator CPython3Posix(dest=/tmp/venvbud8b64k, clear=False, no_vcs_ignore=False, global=False)
+[2022-04-22, 09:18:47 UTC] {process_utils.py:168} INFO -   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/sding/.local/share/virtualenv)
+[2022-04-22, 09:18:47 UTC] {process_utils.py:168} INFO -     added seed packages: pip==22.0.4, setuptools==62.1.0, wheel==0.37.1
+[2022-04-22, 09:18:47 UTC] {process_utils.py:168} INFO -   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+[2022-04-22, 09:18:47 UTC] {process_utils.py:160} INFO - Executing cmd: /tmp/venvbud8b64k/bin/pip install requests
+[2022-04-22, 09:18:47 UTC] {process_utils.py:164} INFO - Output:
+[2022-04-22, 09:18:49 UTC] {process_utils.py:168} INFO - Collecting requests
+[2022-04-22, 09:18:49 UTC] {process_utils.py:168} INFO -   Using cached requests-2.27.1-py2.py3-none-any.whl (63 kB)
+[2022-04-22, 09:18:49 UTC] {process_utils.py:168} INFO - Collecting charset-normalizer~=2.0.0
+[2022-04-22, 09:18:49 UTC] {process_utils.py:168} INFO -   Using cached charset_normalizer-2.0.12-py3-none-any.whl (39 kB)
+[2022-04-22, 09:18:49 UTC] {process_utils.py:168} INFO - Collecting certifi>=2017.4.17
+[2022-04-22, 09:18:49 UTC] {process_utils.py:168} INFO -   Using cached certifi-2021.10.8-py2.py3-none-any.whl (149 kB)
+[2022-04-22, 09:18:49 UTC] {process_utils.py:168} INFO - Collecting idna<4,>=2.5
+[2022-04-22, 09:18:49 UTC] {process_utils.py:168} INFO -   Using cached idna-3.3-py3-none-any.whl (61 kB)
+[2022-04-22, 09:18:49 UTC] {process_utils.py:168} INFO - Collecting urllib3<1.27,>=1.21.1
+[2022-04-22, 09:18:49 UTC] {process_utils.py:168} INFO -   Using cached urllib3-1.26.9-py2.py3-none-any.whl (138 kB)
+[2022-04-22, 09:18:50 UTC] {process_utils.py:168} INFO - Installing collected packages: certifi, urllib3, idna, charset-normalizer, requests
+[2022-04-22, 09:18:50 UTC] {process_utils.py:168} INFO - Successfully installed certifi-2021.10.8 charset-normalizer-2.0.12 idna-3.3 requests-2.27.1 urllib3-1.26.9
+[2022-04-22, 09:18:51 UTC] {process_utils.py:160} INFO - Executing cmd: /tmp/venvbud8b64k/bin/python /tmp/venvbud8b64k/script.py /tmp/venvbud8b64k/script.in /tmp/venvbud8b64k/script.out /tmp/venvbud8b64k/string_args.txt
+[2022-04-22, 09:18:51 UTC] {process_utils.py:164} INFO - Output:
+[2022-04-22, 09:18:51 UTC] {process_utils.py:168} INFO - Traceback (most recent call last):
+[2022-04-22, 09:18:51 UTC] {process_utils.py:168} INFO -   File "/tmp/venvbud8b64k/script.py", line 61, in <module>
+[2022-04-22, 09:18:51 UTC] {process_utils.py:168} INFO -     res = statcan(*arg_dict["args"], **arg_dict["kwargs"])
+[2022-04-22, 09:18:51 UTC] {process_utils.py:168} INFO -   File "/tmp/venvbud8b64k/script.py", line 29, in statcan
+[2022-04-22, 09:18:51 UTC] {process_utils.py:168} INFO -     print(requests.__version__)
+[2022-04-22, 09:18:51 UTC] {process_utils.py:168} INFO - NameError: name 'requests' is not defined
+[2022-04-22, 09:18:51 UTC] {taskinstance.py:1774} ERROR - Task failed with exception
